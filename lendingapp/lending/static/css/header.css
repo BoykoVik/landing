@@ -1,0 +1,125 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(../img/fon.png);
+}
+
+.headcontent {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.menubig {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+}
+.menulabel {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.label {
+    width: 120px;
+    height: 35px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 155.4%;
+    position: relative;
+    padding-left: 10px;
+}
+.cuadro {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #FFFFFF;
+    left: 0;
+}
+.myname {
+    text-align: right;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    border-bottom: 3px solid #FFE600;
+}
+
+.mainhead {
+    margin-left: 20%;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.heahh {
+    position: relative;
+}
+.blur {
+    filter: blur(4px);
+}
+
+.mainhead h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 82px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 775px;
+}
+
+.mainhead p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155.4%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 578px;
+}
+
+.linebottom {
+    width: 180px; 
+    height: 3px;
+    background:#FFE600;
+    margin: 10px 0 50px 0;
+}
+
+.addtiket {
+    width: 259px;
+    height: 49px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 155.4%;
+    letter-spacing: 0.02em;
+    color: #111111;
+    background: #FFE600;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 275ms ease;
+}
+
+.addtiket:hover {
+    background-color: rgba(80, 73, 66, 0.8);
+}

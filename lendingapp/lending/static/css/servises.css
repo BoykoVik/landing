@@ -1,0 +1,220 @@
+.servcontainer {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.servnames {
+    min-width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sername {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.sername p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.sername div {
+    min-width: 15px;
+    min-height: 15px;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: none;
+}
+.active div {
+    border: 3px solid #FFE600;
+    background-color: #FFE600;
+}
+.active p {
+    color: #FFE600;
+}
+.sername:hover .pserv {
+    color: #e9e08f;
+}
+.sername:hover .round {
+    border: 3px solid #e9e08f;
+}
+.servsabout {
+    width: 100%;
+}
+.servabout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px;
+    display: none;/*изначально скрыт*/
+    opacity: 0;
+}
+
+.servabout h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.servabout p {
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+.sdvig {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otherservs {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    background-color: #515151;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+}
+.otherservs h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.otherservcontainer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.otherservnames {
+    min-width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.othersername {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+.othersername p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.othersername div {
+    min-width: 15px;
+    min-height: 15px;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: none;
+}
+.otheractive div {
+    border: 3px solid #FFE600;
+    background-color: #FFE600;
+}
+.otheractive p {
+    color: #FFE600;
+}
+.othersername:hover .otherpserv {
+    color: #e9e08f;
+}
+.othersername:hover .otherround {
+    border: 3px solid #e9e08f;
+}
+
+.otherservabout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px;
+    display: none;
+}
+
+.otherservabout h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.otherservabout p {
+    width: 90%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.leftround {
+    display: none;
+}
+

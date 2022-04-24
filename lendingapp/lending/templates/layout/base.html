@@ -1,20 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="static/css/main.css" rel="stylesheet">
-    <link href="static/css/header.css" rel="stylesheet">
-    <link href="static/css/menu.css" rel="stylesheet">
-    <link href="static/css/content.css" rel="stylesheet">
-    <link href="static/css/servises.css" rel="stylesheet">
-    <link href="static/css/calc.css" rel="stylesheet">
-    <link href="static/css/flipbox.css" rel="stylesheet">
-    <link href="static/css/form.css" rel="stylesheet">
-    <link href="static/css/footer.css" rel="stylesheet">
-    <link href="static/css/modal.css" rel="stylesheet">
-    <link href="static/css/mobil.css" rel="stylesheet">
+    <link href="{% static 'lending/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/header.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/menu.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/content.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/servises.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/calc.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/flipbox.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/form.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/footer.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/modal.css' %}" rel="stylesheet">
+    <link href="{% static 'lending/css/mobil.css' %}" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -264,7 +265,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/html.png" alt="Аватар">
+                    <img src="{% static 'lending/img/html.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>HTML5 (HyperText Markup Language, version 5) — язык для структурирования и представления содержимого всемирной паутины.</p>
@@ -275,7 +276,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/css.png" alt="Аватар">
+                    <img src="{% static 'lending/img/css.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>CSS (Cascading Style Sheets) — формальный язык описания внешнего вида веб-страницы, написанного с использованием языка разметки (чаще всего HTML или XHTML).</p>
@@ -286,7 +287,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/js.png" alt="Аватар">
+                    <img src="{% static 'lending/img/js.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>JavaScript - встраиваемый язык для доступа к объектам приложений. Широко применяется в браузерах как язык сценариев для придания интерактивности веб-страницам.</p>
@@ -297,7 +298,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/jquery.png" alt="Аватар">
+                    <img src="{% static 'lending/img/jquery.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>Библиотека jQuery помогает легко получать доступ к любому элементу <b><a href="https://ru.wikipedia.org/wiki/Document_Object_Model">DOM</a></b>, обращаться к атрибутам и содержимому элементов <b><a href="https://ru.wikipedia.org/wiki/Document_Object_Model">DOM</a></b>, манипулировать ими.</p>
@@ -308,7 +309,7 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="static/img/vue.png" alt="Аватар">
+                  <img src="{% static 'lending/img/vue.png' %}" alt="Аватар">
                 </div>
                 <div class="flip-card-back">
                   <p>JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов.</p>
@@ -319,7 +320,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/psql.png" alt="Аватар">
+                    <img src="{% static 'lending/img/psql.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>PostgreSQL - свободная объектно-реляционная система управления базами данных.</p>
@@ -330,7 +331,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/AJAX_logo.png" alt="Аватар">
+                    <img src="{% static 'lending/img/AJAX_logo.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>AJAX («асинхронный JS и XML») — технология интерактивных веб-приложений, заключающийся в «фоновом» обмене данными браузера с веб-сервером.</p>
@@ -341,7 +342,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/django-13-1175187.png" alt="Аватар">
+                    <img src="{% static 'lending/img/django-13-1175187.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>Django — фреймворк для веб-приложений на языке Python, использующий шаблон проектирования «Модель-Представление-Контроллер»</p>
@@ -352,7 +353,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/json-logo.png" alt="Аватар">
+                    <img src="{% static 'lending/img/json-logo.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>JSON применяется в веб-приложениях как для текстового обмена данными между браузером и сервером (AJAX), так и между серверами (программные HTTP-сопряжения).</p>
@@ -362,7 +363,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/bash.png" alt="Аватар">
+                    <img src="{% static 'lending/img/bash.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>Bash - командная оболочка UNIX, позволяющая настроить и автоматизировать прорцессы на виртуальном или выделенном сервере.</p>
@@ -372,7 +373,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/cpps.png" alt="Аватар">
+                    <img src="{% static 'lending/img/cpps.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>C++ - компилируемый, статически типизированный язык программирования общего назначения.</p>
@@ -382,7 +383,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/github.png" alt="Аватар">
+                    <img src="{% static 'lending/img/github.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>GitHub - система контроля версий, позволяющая удобно обновлять приложения в релизе.</p>
@@ -392,7 +393,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/python.png" alt="Аватар">
+                    <img src="{% static 'lending/img/python.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>Python - высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью.</p>
@@ -402,7 +403,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/apache.png" alt="Аватар">
+                    <img src="{% static 'lending/img/apache.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>Apache HTTP-сервер - свободный веб-сервер, является кроссплатформенным, поддерживает операционные системы Linux, BSD, Mac OS, Microsoft Windows, и др.</p>
@@ -412,7 +413,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="static/img/Nginx-Logo.png" alt="Аватар">
+                    <img src="{% static 'lending/img/Nginx-Logo.png' %}" alt="Аватар">
                   </div>
                   <div class="flip-card-back">
                     <p>NGINX — самый популярный веб-сервер в мире, может обработать более чем десять тысяч соединений одновременно.</p>
@@ -430,7 +431,7 @@
         <div class="worksblock">
 <!--Блок примера работ------------------------------------------------------->
           <div id="myImg" class="workitem">
-            <img class="workimg" src="static/img/works/zoo.png" alt="">
+            <img class="workimg" src="{% static 'lending/img/works/zoo.png' %}" alt="">
             <div class="overlay">
               <p> <a href="#myImg">Просмотр дизайна</a></p>
             </div>
@@ -440,13 +441,13 @@
             <!-- кнопка закрытия -->
             <span class="close">&times;</span>
             <!-- Модальное содержание (изображение) -->
-            <img id="img01" class="modal-content" src="static/img/works/zoo.png" alt="">
+            <img id="img01" class="modal-content" src="{% static 'lending/img/works/zoo.png' %}" alt="">
           </div>
 <!--Конец блока примера работ------------------------------------------------------->
 
  <!--Блок примера работ------------------------------------------------------->
  <div id="myImg" class="workitem">
-  <img class="workimg" src="static/img/works/DEREVENSKIE_LAKOMSTVA.jpg" alt="">
+  <img class="workimg" src="{% static 'lending/img/works/DEREVENSKIE_LAKOMSTVA.jpg' %}" alt="">
   <div class="overlay">
     <p> <a href="#myImg">Просмотр дизайна</a></p>
   </div>
@@ -456,13 +457,13 @@
   <!-- кнопка закрытия -->
   <span class="close">&times;</span>
   <!-- Модальное содержание (изображение) -->
-  <img id="img01" class="modal-content" src="static/img/works/DEREVENSKIE_LAKOMSTVA.jpg" alt="">
+  <img id="img01" class="modal-content" src="{% static 'lending/img/works/DEREVENSKIE_LAKOMSTVA.jpg' %}" alt="">
 </div>
 <!--Конец блока примера работ------------------------------------------------------->
 
 <!--Блок примера работ------------------------------------------------------->
 <div id="myImg" class="workitem">
-  <img class="workimg" src="static/img/works/DEREVENSKIE_LAKOMSTVA.jpg" alt="">
+  <img class="workimg" src="{% static 'lending/img/works/DEREVENSKIE_LAKOMSTVA.jpg' %}" alt="">
   <div class="overlay">
     <p> <a href="#myImg">Просмотр дизайна</a></p>
   </div>
@@ -472,13 +473,13 @@
   <!-- кнопка закрытия -->
   <span class="close">&times;</span>
   <!-- Модальное содержание (изображение) -->
-  <img id="img01" class="modal-content" src="static/img/works/DEREVENSKIE_LAKOMSTVA.jpg" alt="">
+  <img id="img01" class="modal-content" src="{% static 'lending/img/works/DEREVENSKIE_LAKOMSTVA.jpg' %}" alt="">
 </div>
 <!--Конец блока примера работ------------------------------------------------------->
     
 <!--Блок примера работ------------------------------------------------------->
 <div id="myImg" class="workitem">
-  <img class="workimg" src="static/img/works/zoo.png" alt="">
+  <img class="workimg" src="{% static 'lending/img/works/zoo.png' %}" alt="">
   <div class="overlay">
     <p> <a href="#myImg">Просмотр дизайна</a></p>
   </div>
@@ -488,7 +489,7 @@
   <!-- кнопка закрытия -->
   <span class="close">&times;</span>
   <!-- Модальное содержание (изображение) -->
-  <img id="img01" class="modal-content" src="static/img/works/zoo.png" alt="">
+  <img id="img01" class="modal-content" src="{% static 'lending/img/works/zoo.png' %}" alt="">
 </div>
 <!--Конец блока примера работ------------------------------------------------------->
 
@@ -522,10 +523,10 @@
 
         <div class="contactbox">
           <div class="contactblock">
-              <a class="element-animationleft" href="tel:8 (900)-648-26-00"><img src="static/img/phone.png" alt="">8 (900)-648-26-00</a>
-              <a class="element-animationleft" href="mailto:gexar47@gmail.com&body=привет?subject=хочу от тебя сайтов"><img src="static/img/mail.png" alt="">gexar47@gmail.com</a>
-              <a class="element-animationleft" href="https://telegram.im/@gexarVik" target="_blank"><img src="static/img/telegram.png" alt="">8-900-648-26-00</a>
-              <a class="element-animationleft" href="https://wa.me/79006482600"><img src="static/img/WhatsApp.png" alt="">8-900-648-26-00</a>
+              <a class="element-animationleft" href="tel:8 (900)-648-26-00"><img src="{% static 'lending/img/phone.png' %}" alt="">8 (900)-648-26-00</a>
+              <a class="element-animationleft" href="mailto:gexar47@gmail.com&body=привет?subject=хочу от тебя сайтов"><img src="{% static 'lending/img/mail.png' %}" alt="">gexar47@gmail.com</a>
+              <a class="element-animationleft" href="https://telegram.im/@gexarVik" target="_blank"><img src="{% static 'lending/img/telegram.png' %}" alt="">8-900-648-26-00</a>
+              <a class="element-animationleft" href="https://wa.me/79006482600"><img src="{% static 'lending/img/WhatsApp.png' %}" alt="">8-900-648-26-00</a>
           </div>
           <div class="contactblock">
             
@@ -558,10 +559,10 @@
               </div>
               <div class="partnerinfo">
                 <div class="partnercontact"><h4>Александра</h4></div>
-                <div class="partnercontact"><a href="tel:8 (800)-535-35-99" class="mintel"><img src="static/img/phone.png" alt="">8 (800)-535-35-99</a></div>
-                <div class="partnercontact"><a href="mailto:gexar47@gmail.com&body=привет?subject=хочу от тебя сайтов"><img src="static/img/mail.png" alt="">gexar47@gmail.com</a></div>
-                <div class="partnercontact"><a href="https://telegram.im/@gexarVik" target="_blank"><img src="static/img/telegram.png" alt="">8-900-648-26-00</a></div>
-                <div class="partnercontact"><a href="https://wa.me/79006482600"><img src="static/img/WhatsApp.png" alt="">8-900-648-26-00</a></div>
+                <div class="partnercontact"><a href="tel:8 (800)-535-35-99" class="mintel"><img src="{% static 'lending/img/phone.png' %}" alt="">8 (800)-535-35-99</a></div>
+                <div class="partnercontact"><a href="mailto:gexar47@gmail.com&body=привет?subject=хочу от тебя сайтов"><img src="{% static 'lending/img/mail.png' %}" alt="">gexar47@gmail.com</a></div>
+                <div class="partnercontact"><a href="https://telegram.im/@gexarVik" target="_blank"><img src="{% static 'lending/img/telegram.png' %}" alt="">8-900-648-26-00</a></div>
+                <div class="partnercontact"><a href="https://wa.me/79006482600"><img src="{% static 'lending/img/WhatsApp.png' %}" alt="">8-900-648-26-00</a></div>
               </div>
               
             </div>
@@ -597,10 +598,10 @@
         <a href="#contact" >Контакты</a>
       </div>
       <div class="footer-contacts">
-        <a href="tel:8 (900)-648-26-00" class="mintel"><img src="static/img/phone.png" alt="">8 (900)-648-26-00</a>
-        <a href="mailto:gexar47@gmail.com&body=привет?subject=хочу от тебя сайтов"><img src="static/img/mail.png" alt="">gexar47@gmail.com</a>
-        <a href="https://telegram.im/@gexarVik" target="_blank"><img src="static/img/telegram.png" alt="">8-900-648-26-00</a>
-        <a href="https://wa.me/79006482600"><img src="static/img/WhatsApp.png" alt="">8-900-648-26-00</a>
+        <a href="tel:8 (900)-648-26-00" class="mintel"><img src="{% static 'lending/img/phone.png' %}" alt="">8 (900)-648-26-00</a>
+        <a href="mailto:gexar47@gmail.com&body=привет?subject=хочу от тебя сайтов"><img src="{% static 'lending/img/mail.png' %}" alt="">gexar47@gmail.com</a>
+        <a href="https://telegram.im/@gexarVik" target="_blank"><img src="{% static 'lending/img/telegram.png' %}" alt="">8-900-648-26-00</a>
+        <a href="https://wa.me/79006482600"><img src="{% static 'lending/img/WhatsApp.png' %}" alt="">8-900-648-26-00</a>
       </div>
       <a href="#contact">Оставить заявку</a>
     </div>
@@ -610,9 +611,9 @@
 
 
 </body>
-<script src="static/js/menu.js"></script>
-<script src="static/js/services.js"></script>
-<script src="static/js/calc.js"></script>
-<script src="static/js/show.js"></script>
-<script src="static/js/modal.js"></script>
+<script src="{% static 'lending/js/menu.js' %}"></script>
+<script src="{% static 'lending/js/services.js' %}"></script>
+<script src="{% static 'lending/js/calc.js' %}"></script>
+<script src="{% static 'lending/js/show.js' %}"></script>
+<script src="{% static 'lending/js/modal.js' %}"></script>
 </html>

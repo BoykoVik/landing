@@ -1,0 +1,184 @@
+@media only screen and (max-width: 700px){
+    .menulabel {
+      display: none;
+    }
+    h2 {
+        margin-top: 10px;
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .mainhead {
+        margin: 10px;
+        align-items: center;
+    }
+
+    .headcontent {
+        height: 400px;
+        align-items: center;
+    }
+
+    .mainhead h1 {
+        margin-top: 10px;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .blur {
+        filter: blur(2px);
+    }
+    .mainhead p {
+        font-size: 16px;
+    }
+
+    .linebottom {
+        margin: 5px 0 5px 0;
+    }
+    .addtiket {
+        margin: auto;
+    }
+    .tasks {
+        width: 100%;
+    }
+    .task {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        width: 200px;
+    }
+    .task h3 {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .servcontainer {
+        width: 100%;
+        flex-direction: column;
+    }
+    .sername {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+    .servnames {
+        min-width: 0;
+    }
+    .sername p {
+        line-height: 110%;
+        text-align: left;
+    }
+    .round {
+        display: none;
+    }
+    .otherround {
+        display: none;
+    }
+
+    .servabout {
+        width: 95%;
+        margin-left: 0px;
+    }
+    .servsabout {
+        width: 95%;
+        margin-left: 0px;
+    }
+    .servabout p {
+        width: 95%;
+        font-size: 14px;
+        line-height: 110%;
+    }
+    .servabout h3 {
+        font-size: 15px;
+        line-height: 10px;
+        margin-bottom: 5px;
+    }
+    .otherservs {
+        width: 100%;
+        position: static;
+    }
+    .otherservcontainer {
+        width: 100%;
+        flex-direction: column;
+    }
+    .othersername {
+        justify-content: flex-start;
+        margin-bottom: 10px
+    }
+    .othersername p {
+        text-align: left;
+    }
+    .otherservabout {
+        margin-left: 0;
+    }
+
+    .leftround {
+        display: block;
+        margin-right: 5px;
+    }
+    .otherservabout p {
+        width: 95%;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0 5px 0 5px;
+        margin-bottom: 10px;
+    }
+    .sdvig {
+        height: auto;
+        position: relative;
+    }
+    .flip-card {
+        width: 50px;
+        height: 50px;
+    }
+    .flip-card-front img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .worksblock {
+        width: 95%;
+    }
+    .calcnames {
+        min-width: 0;
+        width: 95%;
+    }
+    .rcal {
+        display: block;
+        width: 10px;
+        height: 10px;
+    }
+    .cost, .calcname, .calcserv {
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+    }
+    .calcname {
+        margin-bottom: 10px;
+    }
+    .calcname div {
+        min-width: 10px;
+        min-height: 10px;
+        border-radius: 20px;
+        margin-right: 5px;
+    }
+    .partneritem {
+        flex-direction: column;
+    }
+    .partnername p {
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+    .partnerabout {
+        margin-bottom: 15px;
+    }
+    .partnername {
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+    }
+  }
