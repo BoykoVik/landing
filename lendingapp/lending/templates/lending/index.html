@@ -44,3 +44,20 @@
 </div>
 
 {% endblock %}
+
+{% block techs %}
+
+    {% for el in techs %}
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="{{ el.image.url }}" alt="Аватар">
+          </div>
+          <div class="flip-card-back">
+            <p>{{ el.about|safe }}</p>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}

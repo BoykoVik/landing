@@ -6,4 +6,5 @@ from .models import Services, Servicesdop, Technologies, Works
 def index(request):
     servs = Services.objects.order_by('id')
     servsdop = Servicesdop.objects.all().order_by('id')
-    return render(request, 'lending/index.html', {'servs': servs, 'servsdop': servsdop})
+    techs = Technologies.objects.all().order_by('id')
+    return render(request, 'lending/index.html', {'servs': servs, 'servsdop': servsdop, 'techs': techs})
