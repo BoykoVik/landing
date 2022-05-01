@@ -36,7 +36,7 @@ class Technologies(models.Model):
     title = models.CharField(blank=False, max_length=50, verbose_name='Наименование технологии')
     image = models.ImageField(blank=False, upload_to='techs/', verbose_name='Изображение технологии')
     about = models.TextField(blank=False, max_length=350, verbose_name='О технологии')
-    #titlealt = models.TextField(blank=True, max_length=350, verbose_name='для тега alt')
+    titlealt = models.TextField(blank=True, max_length=350, verbose_name='для тега alt')
 
     def __str__(self):
         return self.title
@@ -51,7 +51,7 @@ class Works(models.Model):
     itis = models.CharField(max_length=300, choices = CHOICES, verbose_name='Вид работы')
     image = models.ImageField(blank=False, upload_to='works/', verbose_name='Изображение')
     address = models.CharField(blank=True, max_length=250, verbose_name='Адрес')
-    #titlealt = models.TextField(blank=True, max_length=350, verbose_name='для тега alt')
+    titlealt = models.TextField(blank=True, max_length=350, verbose_name='для тега alt')
 
     def __str__(self):
         return self.title
@@ -59,7 +59,7 @@ class Works(models.Model):
     class Meta:
         verbose_name = 'Пример работы'
         verbose_name_plural = 'Примеры работ'
-        ordering = ['-id']
+        ordering = ['itis']
 
 
 class Calculate(models.Model):
@@ -72,4 +72,4 @@ class Calculate(models.Model):
     class Meta:
         verbose_name = 'Цены услуги'
         verbose_name_plural = 'Цены услуг'
-        ordering = ['-id']
+        ordering = ['id']

@@ -51,7 +51,7 @@
     <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="{{ el.image.url }}" alt="Аватар">
+            <img src="{{ el.image.url }}" alt="{{ el.titlealt }}">
           </div>
           <div class="flip-card-back">
             <p>{{ el.about|safe }}</p>
@@ -66,10 +66,10 @@
 {% block works %}
 {% for el in works %}
 <div id="myImg" class="workitem">
-    <img class="workimg" src="{{ el.image.url }}" alt="">
+    <img class="workimg" src="{{ el.image.url }}" alt="{{ el.titlealt }}">
     <div class="overlay">
         {% if el.itis == "2" %}
-      <p> <a href="#myImg">Просмотр дизайна</a></p>
+      <p> Просмотр дизайна</p>
       {% else %}
       <p> <a href="{{ el.address }}">Перейти на сайт</a></p>
       {% endif %}
@@ -78,12 +78,14 @@
   {% if el.itis == "2" %}
   <div id="myModal" class="modal">
     <span class="close">&times;</span>
-    <img id="img01" class="modal-content" src="{{ el.image.url }}" alt="">
+    <img id="img01" class="modal-content" src="{{ el.image.url }}" alt="{{ el.titlealt }}">
   </div>
   {% endif %}
 
   {% endfor %}
 {% endblock %}
+
+
 
 {% block calcs %}
 

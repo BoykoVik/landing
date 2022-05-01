@@ -171,13 +171,15 @@
     
   }
   
-  .overlay a {
+  .overlay a, .overlay p {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     color: aliceblue;
     text-decoration: underline overline #FFE600;
+    cursor: pointer;
   }
+  
   .workitem:hover .overlay {
     bottom: 0;
     height: 100%;
