@@ -81,7 +81,19 @@
     <img id="img01" class="modal-content" src="{{ el.image.url }}" alt="">
   </div>
   {% endif %}
-  
+
   {% endfor %}
 {% endblock %}
 
+{% block calcs %}
+
+{% for el in calcs %}
+
+{% if el.cost %}
+<div class="calcname"><div class="round rcal"></div><p class="calcserv">{{ el.title }}</p> от <span class="cost">{{ el.cost }}</span> р</div>
+{% else %}
+<div class="calcname"><div class="round rcal"></div><p class="calcserv">{{ el.title }}</p><span class="cost"> бесплатно</span></div>
+{% endif %}
+{% endfor %}
+
+{% endblock %}

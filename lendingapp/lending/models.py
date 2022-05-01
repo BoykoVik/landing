@@ -64,7 +64,7 @@ class Works(models.Model):
 
 class Calculate(models.Model):
     title = models.CharField(blank=False, max_length=50, verbose_name='Наименование')
-    cost = models.ImageField(blank = True, null = True, verbose_name='Цена')
+    cost = models.IntegerField(blank = True, null = True, verbose_name='Цена')
 
     def __str__(self):
         return self.title
