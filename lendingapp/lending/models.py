@@ -47,7 +47,7 @@ class Technologies(models.Model):
         ordering = ['-id']
 
 class Works(models.Model):
-    title = models.CharField(blank=False, max_length=50, verbose_name='Наименование технологии')
+    title = models.CharField(blank=False, max_length=50, verbose_name='Наименование')
     itis = models.CharField(max_length=300, choices = CHOICES, verbose_name='Вид работы')
     image = models.ImageField(blank=False, upload_to='works/', verbose_name='Изображение')
     address = models.CharField(blank=True, max_length=250, verbose_name='Адрес')
@@ -59,4 +59,17 @@ class Works(models.Model):
     class Meta:
         verbose_name = 'Пример работы'
         verbose_name_plural = 'Примеры работ'
+        ordering = ['-id']
+
+
+class Calculate(models.Model):
+    title = models.CharField(blank=False, max_length=50, verbose_name='Наименование')
+    cost = models.ImageField(blank = True, null = True, verbose_name='Цена')
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Цены услуги'
+        verbose_name_plural = 'Цены услуг'
         ordering = ['-id']

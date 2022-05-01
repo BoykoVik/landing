@@ -61,3 +61,27 @@
     {% endfor %}
 
 {% endblock %}
+
+
+{% block works %}
+{% for el in works %}
+<div id="myImg" class="workitem">
+    <img class="workimg" src="{{ el.image.url }}" alt="">
+    <div class="overlay">
+        {% if el.itis == "2" %}
+      <p> <a href="#myImg">Просмотр дизайна</a></p>
+      {% else %}
+      <p> <a href="{{ el.address }}">Перейти на сайт</a></p>
+      {% endif %}
+    </div>
+  </div>
+  {% if el.itis == "2" %}
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img id="img01" class="modal-content" src="{{ el.image.url }}" alt="">
+  </div>
+  {% endif %}
+  
+  {% endfor %}
+{% endblock %}
+
