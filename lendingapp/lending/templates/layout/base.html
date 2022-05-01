@@ -152,6 +152,7 @@
         <div class="linebottom"></div>
 
         <div class="worksblock">
+          {% block works %}
 <!--Блок примера работ------------------------------------------------------->
           <div id="myImg" class="workitem">
             <img class="workimg" src="{% static 'lending/img/works/zoo.png' %}" alt="">
@@ -215,7 +216,7 @@
   <img id="img01" class="modal-content" src="{% static 'lending/img/works/zoo.png' %}" alt="">
 </div>
 <!--Конец блока примера работ------------------------------------------------------->
-
+{% endblock %}
         </div>
     </div>
 
