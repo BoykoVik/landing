@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from .models import Services, Servicesdop, Technologies, Works
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'lending/index.html')
+    servs = Services.objects.order_by('id')
+    servsdop = Servicesdop.objects.all().order_by('id')
+    return render(request, 'lending/index.html', {'servs': servs, 'servsdop': servsdop})

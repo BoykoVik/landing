@@ -1,3 +1,46 @@
 {% extends "layout/base.html" %}
 {% load static %}
 
+{% block servs %}
+
+<div class="servcontainer">
+    <div class="servnames">
+        {% for el in servs %}
+        <div class="sername"><div class="round leftround"></div><p class="pserv">{{ el.title }}</p><div class="round"></div></div>
+        {% endfor %}
+    </div>
+    
+    <div class="servsabout">
+
+        {% for el in servs %}
+        <div class="servabout">
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.about }}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block servsdop %}
+
+<div class="otherservcontainer">
+    <div class="otherservnames">
+        {% for el in servsdop %}
+      <div class="othersername"><div class="otherround leftround"></div><p class="otherpserv">{{ el.title }}</p><div class="otherround"></div></div>
+      {% endfor %}
+    </div>
+    
+    <div class="otherservsabout">
+        {% for el in servsdop %}
+      <div class="otherservabout">
+        <p>{{ el.about }}</p>
+    </div>
+    {% endfor %}
+        
+    </div>
+</div>
+
+{% endblock %}

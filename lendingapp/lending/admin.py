@@ -8,12 +8,12 @@ class ServicesAdmin(admin.ModelAdmin):# настройка отображени�
 admin.site.register(Services, ServicesAdmin)
 
 class ServicesdopAdmin(admin.ModelAdmin):# настройка отображения в админке
-    list_display = ('title', 'about',)
+    list_display = ('title', )
 
 admin.site.register(Servicesdop, ServicesdopAdmin)
 
 class TechnologiesAdmin(admin.ModelAdmin):# настройка отображения в админке
-    list_display = ('title', 'image','about',)
+    list_display = ('title', 'image', 'about',)
 
 admin.site.register(Technologies, ServicesdopAdmin)
 
